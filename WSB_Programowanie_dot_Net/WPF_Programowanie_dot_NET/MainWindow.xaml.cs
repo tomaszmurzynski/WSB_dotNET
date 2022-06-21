@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WSB_Programowanie_dot_Net
+namespace WPF_Programowanie_dot_NET
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

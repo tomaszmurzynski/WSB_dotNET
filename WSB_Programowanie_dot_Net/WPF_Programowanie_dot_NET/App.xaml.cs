@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace WSB_Programowanie_dot_Net
+namespace WPF_Programowanie_dot_NET
 {
     /// <summary>
     /// Interaction logic for App.xaml
