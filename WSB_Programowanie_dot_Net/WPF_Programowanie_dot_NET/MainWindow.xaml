@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_Programowanie_dot_NET"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="750" Width="500">
     <Window.Resources>
 
         <SolidColorBrush x:Key="MySolidColorDarkRed" Color="#900" />
