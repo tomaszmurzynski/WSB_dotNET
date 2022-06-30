@@ -5,8 +5,43 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Zadanie3"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Zadanie 3 - Lista filmów" Height="650" Width="400" FontSize="24">
+       <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
 
-    </Grid>
+            <ListBox 
+            Name="ListaFilmow"
+            Grid.Row="0"
+            Grid.ColumnSpan="2"
+            ItemsSource="{Binding ListaFilmow}"
+            >
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Szczegóły}"/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+
+            <Button
+            Grid.Column="0"
+            Grid.Row="1" Click="Szczegóły"
+            >
+                Szczegóły
+            </Button>
+            <Button
+            Grid.Column="1"
+            Grid.Row="1" Click="NowyFilm"
+            >
+                Nowy
+            </Button>
+        </Grid>
+
+    
 </Window>

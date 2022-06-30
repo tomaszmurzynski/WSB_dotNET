@@ -1,0 +1,6 @@
+C:\Users\tomas\OneDrive\Pulpit\Projekty_dotNET\WSB_dotNET\Zadanie3\obj\Debug\net6.0-windows\Zadanie3.csproj.AssemblyReference.cache
+C:\Users\tomas\OneDrive\Pulpit\Projekty_dotNET\WSB_dotNET\Zadanie3\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\tomas\OneDrive\Pulpit\Projekty_dotNET\WSB_dotNET\Zadanie3\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\tomas\OneDrive\Pulpit\Projekty_dotNET\WSB_dotNET\Zadanie3\obj\Debug\net6.0-windows\Zadanie3_MarkupCompile.cache
+C:\Users\tomas\OneDrive\Pulpit\Projekty_dotNET\WSB_dotNET\Zadanie3\obj\Debug\net6.0-windows\Zadanie3_MarkupCompile.lref
+C:\Users\tomas\OneDrive\Pulpit\Projekty_dotNET\WSB_dotNET\Zadanie3\obj\Debug\net6.0-windows\OknoSzczegółów.g.cs
