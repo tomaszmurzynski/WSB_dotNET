@@ -1,0 +1,95 @@
+﻿<Window x:Class="Zad_1_WrapPanel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Zad_1_WrapPanel"
+        mc:Ignorable="d"
+ Title="MainWindow" Height="750" Width="501">
+    <Window.Resources>
+
+        <SolidColorBrush x:Key="MySolidColorDarkRed" Color="#900" />
+        <SolidColorBrush x:Key="MySolidColorPurple" Color="#99D" />
+        <SolidColorBrush x:Key="MySolidColorBlue" Color="#15D" />
+        <SolidColorBrush x:Key="MySolidColorGrey" Color="#DDF" />
+        <SolidColorBrush x:Key="MySolidColorWhiteGrey" Color="#EEE" />
+        <SolidColorBrush x:Key="MySolidColorBlack" Color="#000" />
+        <SolidColorBrush x:Key="MySolidColorWhite" Color="White" />
+        <SolidColorBrush x:Key="MySolidColorGreen" Color="Green" />
+
+
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="24" />
+            <Setter Property="FontWeight" Value="Bold" />
+        </Style>
+
+        <Style TargetType="Label" 
+               BasedOn="{StaticResource {x:Type Label}}"
+               x:Key="SpecialLabelStyle">
+            <Setter Property="FontSize" Value="24" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Foreground" Value="{StaticResource MySolidColorDarkRed}" />
+        </Style>
+
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="{StaticResource MySolidColorWhiteGrey}"/>
+            <Setter Property="FontSize" Value="20" />
+
+        </Style>
+
+        <Style TargetType="Button" 
+               BasedOn="{StaticResource {x:Type Button}}"
+               x:Key="SpecialButtonStyle">
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Background" Value="{StaticResource MySolidColorGrey}" />
+            <Setter Property="Foreground" Value="{StaticResource MySolidColorBlack}"/>
+            <Setter Property="Width" Value="100" />
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="{StaticResource MySolidColorPurple}" />
+                    <Setter Property="Foreground" Value="{StaticResource MySolidColorDarkRed}" />
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background" Value="{StaticResource MySolidColorWhite}"/>
+                    <Setter Property="Foreground" Value="{StaticResource MySolidColorGreen}"/>
+
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+
+    </Window.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="3*" />
+        </Grid.RowDefinitions>
+        <WrapPanel Grid.Column="0" Grid.Row="0">
+            <Button Style="{StaticResource SpecialButtonStyle}">Button1</Button>
+            <Button Style="{StaticResource SpecialButtonStyle}">Button2</Button>
+            <Button Style="{StaticResource SpecialButtonStyle}">Button3</Button>
+            <Button Style="{StaticResource SpecialButtonStyle}">Button4</Button>
+            <Button Style="{StaticResource SpecialButtonStyle}">Button5</Button>
+        </WrapPanel>
+        <StackPanel Orientation="Vertical" Grid.Column="0" Grid.Row="1" Margin="0,15,0,0">
+            <Label>Label1</Label>
+            <Button>Lab1Button</Button>
+            <Button>Lab1Button</Button>
+            <Button>Lab1Button</Button>
+            <Label Style="{StaticResource SpecialLabelStyle}">Label2</Label>
+            <Button>Lab2Button</Button>
+            <Button>Lab2Button</Button>
+            <Button>Lab2Button</Button>
+            <Label>Label3</Label>
+            <Button>Lab3Button</Button>
+            <Button>Lab3Button</Button>
+            <Button>Lab3Button</Button>
+
+        </StackPanel>
+    </Grid>
+</Window>
