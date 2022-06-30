@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Kalkulator"
         mc:Ignorable="d"
-        Title="Nasze okno"
+        Title="Kalkulator"
     Height="650"
     Width="400"
     FontSize="24"
